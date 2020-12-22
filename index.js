@@ -11,6 +11,13 @@ const PORT = process.env.PORT || 5000
 // => console zeigt deine emailadresse
 // heroku create 
 // erstellt ein neues Projekt auf Heroku
+// unter deploy suchen wir die Zeile heroku git:remote ...
+// Damit setzen wir heroku als einen upstream
+// ganz normal git add . git commit ...
+// aber dann 
+// git push heroku master
+// um  es auf Heroku zu pushen, dort wird es compilt
+// mit heroku open öffnet sich das veröffentlkichte Projekt
 
 app.use(express.static('public'))
 app.set('view engine', 'ejs')
